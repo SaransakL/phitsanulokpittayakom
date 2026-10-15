@@ -1,5 +1,5 @@
 <script setup>
-import { posts } from '~/data/blog'
+import { posts } from '~/data/announcements'
 
 const route = useRoute()
 
@@ -23,16 +23,16 @@ useHead({
   <article class="article">
     <div class="container article-container">
 
-      <div class="article-header">        
-        <h1>{{ post.title }}</h1>
-        <time>{{ post.date }}</time>
-      </div>
-
       <img
         :src="post.image"
         :alt="post.title"
         class="article-image"
       >
+
+      <div class="article-header">        
+        <h1>{{ post.title }}</h1>
+        <time>{{ post.date }}</time>
+      </div>
 
       <div class="article-content">
         <p

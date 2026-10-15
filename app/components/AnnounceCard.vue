@@ -9,7 +9,7 @@ defineProps({
 
 <template>
   <NuxtLink
-    :to="`/blog/${post.slug}`"
+    :to="`/announcements/${post.slug}`"
     class="blog-card"
   >
     <img

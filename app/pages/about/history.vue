@@ -1,13 +1,11 @@
 <script setup>
-import { posts } from '~/data/blog'
-
 useHead({
   title: 'ประวัติโรงเรียน - โรงเรียนพิษณุโลกพิทยาคม'
 })
 </script>
 
 <template>
-  <section class="blog-page">
+  <section class="history">
     <div class="container">
 
       <div class="page-heading">

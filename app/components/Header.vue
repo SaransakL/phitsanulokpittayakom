@@ -13,8 +13,9 @@
         <NuxtLink to="/">หน้าแรก</NuxtLink>
 
         <div class="dropdown">
-          <NuxtLink to="#" class="dropdown-toggle">
+          <NuxtLink class="dropdown-toggle">
             เกี่ยวกับ
+            <i class="bi bi-chevron-down"></i>
           </NuxtLink>
 
           <div class="dropdown-menu">
@@ -26,8 +27,9 @@
         </div>
 
         <div class="dropdown">
-          <NuxtLink to="#" class="dropdown-toggle">
+          <NuxtLink class="dropdown-toggle">
             กลุ่มสาระฯ
+            <i class="bi bi-chevron-down"></i>
           </NuxtLink>
 
           <div class="dropdown-menu">
@@ -43,8 +45,9 @@
         </div>
 
         <div class="dropdown">
-          <NuxtLink to="#" class="dropdown-toggle">
+          <NuxtLink class="dropdown-toggle">
             บุคลากร
+            <i class="bi bi-chevron-down"></i>
           </NuxtLink>
 
           <div class="dropdown-menu">
@@ -59,7 +62,17 @@
           </div>
         </div>
 
-        <NuxtLink to="/blog">ข่าวสาร</NuxtLink>
+        <div class="dropdown">
+          <NuxtLink class="dropdown-toggle">
+            ข่าวสาร
+            <i class="bi bi-chevron-down"></i>
+          </NuxtLink>
+
+          <div class="dropdown-menu">
+            <NuxtLink to="/announcements">ประชาสัมพันธ์</NuxtLink>
+            <NuxtLink to="/events">กิจกรรม</NuxtLink>
+          </div>
+        </div>
       </nav>
 
       <!-- Mobile Menu Button -->
@@ -111,22 +124,11 @@
               <i class="bi bi-building"></i>
               เกี่ยวกับ
             </div>
-
-            <NuxtLink to="/about/school" @click="closeMenu">
-              เกี่ยวกับโรงเรียน
-            </NuxtLink>
-
-            <NuxtLink to="/about/history" @click="closeMenu">
-              ประวัติโรงเรียน
-            </NuxtLink>
-
-            <NuxtLink to="/about/executives" @click="closeMenu">
-              ผู้บริหารโรงเรียน
-            </NuxtLink>
-
-            <NuxtLink to="/about/executive-history" @click="closeMenu">
-              ทำเนียบผู้บริหาร
-            </NuxtLink>
+            
+            <NuxtLink to="/about/school" @click="closeMenu">เกี่ยวกับโรงเรียน</NuxtLink>
+            <NuxtLink to="/about/history" @click="closeMenu">ประวัติโรงเรียน</NuxtLink>
+            <NuxtLink to="/about/executives" @click="closeMenu">ผู้บริหารโรงเรียน</NuxtLink>
+            <NuxtLink to="/about/executive-history" @click="closeMenu">ทำเนียบผู้บริหาร</NuxtLink>
           </div>
 
           <div class="mobile-section">
@@ -135,37 +137,14 @@
               กลุ่มสาระการเรียนรู้
             </div>
 
-            <NuxtLink to="/group/thai" @click="closeMenu">
-              ภาษาไทย
-            </NuxtLink>
-
-            <NuxtLink to="/group/math" @click="closeMenu">
-              คณิตศาสตร์
-            </NuxtLink>
-
-            <NuxtLink to="/group/science" @click="closeMenu">
-              วิทยาศาสตร์และเทคโนโลยี
-            </NuxtLink>
-
-            <NuxtLink to="/group/social" @click="closeMenu">
-              สังคมศึกษา ศาสนา และวัฒนธรรม
-            </NuxtLink>
-
-            <NuxtLink to="/group/foreign" @click="closeMenu">
-              ภาษาต่างประเทศ
-            </NuxtLink>
-
-            <NuxtLink to="/group/art" @click="closeMenu">
-              ศิลปะ
-            </NuxtLink>
-
-            <NuxtLink to="/group/physical" @click="closeMenu">
-              สุขศึกษา และพลศึกษา
-            </NuxtLink>
-
-            <NuxtLink to="/group/occupation" @click="closeMenu">
-              การงานอาชีพ
-            </NuxtLink>
+            <NuxtLink to="/group/thai" @click="closeMenu">ภาษาไทย</NuxtLink>
+            <NuxtLink to="/group/math" @click="closeMenu">คณิตศาสตร์</NuxtLink>
+            <NuxtLink to="/group/science" @click="closeMenu">วิทยาศาสตร์และเทคโนโลยี</NuxtLink>
+            <NuxtLink to="/group/social" @click="closeMenu">สังคมศึกษา ศาสนา และวัฒนธรรม</NuxtLink>
+            <NuxtLink to="/group/foreign" @click="closeMenu">ภาษาต่างประเทศ</NuxtLink>
+            <NuxtLink to="/group/art" @click="closeMenu">ศิลปะ</NuxtLink>
+            <NuxtLink to="/group/physical" @click="closeMenu">สุขศึกษา และพลศึกษา</NuxtLink>
+            <NuxtLink to="/group/occupation" @click="closeMenu">การงานอาชีพ</NuxtLink>
           </div>
 
           <div class="mobile-section">
@@ -184,10 +163,15 @@
             <NuxtLink to="/board/library" @click="closeMenu">กลุ่มงานห้องสมุด</NuxtLink>
           </div>
 
-          <NuxtLink to="/blog" @click="closeMenu">
-            <i class="bi bi-newspaper"></i>
-            ข่าวสาร
-          </NuxtLink>
+          <div class="mobile-section">
+            <div class="mobile-section-title">
+              <i class="bi bi-newspaper"></i>
+              ข่าวสาร
+            </div>
+
+            <NuxtLink to="/announcements" @click="closeMenu">ประชาสัมพันธ์</NuxtLink>
+            <NuxtLink to="/events" @click="closeMenu">กิจกรรม</NuxtLink>
+          </div>
 
         </nav>
       </aside>
