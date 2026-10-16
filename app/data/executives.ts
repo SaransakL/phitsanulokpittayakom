@@ -1,32 +1,37 @@
 export const executives = [
   {
     slug: 'director',
-    name: 'กร เลือกหา',
+    name: 'กร',
+    lastname: 'เลือกหา',
     position: 'ผู้อำนวยการ',
-    image: '/assets/people/กร-เลือกหา.png',
+    image: '/_nuxt/assets/people/กร-เลือกหา.png',
   },
   {
     slug: 'deputy-director',
-    name: 'รัตติกาล บัวสิงคำ',
+    name: 'รัตติกาล',
+    lastname: 'บัวสิงคำ',
     position: 'รองผู้อำนวยการการกลุ่มงบประมาณและบุคคล',
-    image: '/assets/people/รัตติกาล-บัวสิงคำ.png',
+    image: '/_nuxt/assets/people/รัตติกาล-บัวสิงคำ.png',
   },
   {
     slug: 'deputy-director',
-    name: 'ธันย์ญาธิป ฟองจางวาง',
+    name: 'ธันย์ญาธิป',
+    lastname: 'ฟองจางวาง',
     position: 'รองผู้อำนวยการการกลุ่มวิชาการ',
-    image: '/assets/people/ธันย์ญาธิป-ฟองจางวาง.png',
+    image: '/_nuxt/assets/people/ธันย์ญาธิป-ฟองจางวาง.png',
   },
   {
     slug: 'deputy-director',
-    name: 'ธารีรัตน์ สุวรรณ',
+    name: 'ธารีรัตน์',
+    lastname: 'สุวรรณ',
     position: 'รองผู้อำนวยการการกลุ่มทั่วไป',
-    image: '/assets/people/ธารีรัตน์-สุวรรณ.png',
+    image: '/_nuxt/assets/people/ธารีรัตน์-สุวรรณ.png',
   },
   {
     slug: 'deputy-director',
-    name: 'ทิพยรัตน์ ส่งประเสริฐ',
+    name: 'ทิพยรัตน์',
+    lastname: 'ส่งประเสริฐ',
     position: 'รองผู้อำนวยการการกลุ่มกิจการนักเรียน',
-    image: '/assets/people/ทิพยรัตน์-ส่งประเสริฐ.png',
+    image: '/_nuxt/assets/people/ทิพยรัตน์-ส่งประเสริฐ.png',
   }
 ]

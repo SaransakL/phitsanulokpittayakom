@@ -28,7 +28,7 @@ useHead({
 
           <div class="management-content">
 
-            <h2>{{ person.name }}</h2>
+            <h2>{{ person.name }}<br>{{ person.lastname }}</h2>
 
             <p v-if="person.position">
               {{ person.position }}
