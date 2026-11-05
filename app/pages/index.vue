@@ -1,20 +1,14 @@
 <script setup>
-import { posts } from '~/data/announcements'
-
 useHead({
   title: 'โรงเรียนพิษณุโลกพิทยาคม'
 })
-
-// ประชาสัมพันธ์ล่าสุด 3 รายการ
-const latestPosts = posts.slice(0, 3)
-
 </script>
 
 <template>
   <!-- Hero -->
   <div class="hero">
     <img
-      src="/assets/demo-hero.png"
+      src="/assets/องค์ภา.png"
       alt="โรงเรียนพิษณุโลกพิทยาคม"
     >
   </div>
