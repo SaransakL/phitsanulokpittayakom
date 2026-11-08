@@ -1,14 +1,15 @@
 <template>
-  <header class="header">
+  <header
+      class="header"
+      :class="{ 'header-hidden': isHidden }"
+    >
     <div class="container header-inner">
 
-      <!-- Logo -->
       <NuxtLink to="/" class="logo" @click="closeMenu">
         <img src="/assets/pp-logo.png" alt="โรงเรียนพิษณุโลกพิทยาคม">
         <span>โรงเรียนพิษณุโลกพิทยาคม</span>
       </NuxtLink>
 
-      <!-- Desktop Navigation -->
       <nav class="nav">
         <NuxtLink to="/">หน้าแรก</NuxtLink>
 
@@ -75,7 +76,6 @@
         </div>
       </nav>
 
-      <!-- Mobile Menu Button -->
       <button
         class="menu-button"
         type="button"
@@ -87,7 +87,6 @@
 
     </div>
 
-    <!-- Mobile Overlay -->
     <Transition name="fade">
       <div
         v-if="isOpen"
@@ -96,7 +95,6 @@
       ></div>
     </Transition>
 
-    <!-- Mobile Offcanvas -->
     <Transition name="offcanvas">
       <aside v-if="isOpen" class="offcanvas">
 
@@ -180,9 +178,32 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue'
 
 const isOpen = ref(false)
+const isHidden = ref(false)
+
+let lastScrollY = 0
+
+const handleScroll = () => {
+  const currentScrollY = window.scrollY
+
+  if (currentScrollY <= 50) {
+    isHidden.value = false
+    lastScrollY = currentScrollY
+    return
+  }
+
+  if (currentScrollY > lastScrollY) {
+    isHidden.value = true
+  }
+
+  else if (currentScrollY < lastScrollY) {
+    isHidden.value = false
+  }
+
+  lastScrollY = currentScrollY
+}
 
 const openMenu = () => {
   isOpen.value = true
@@ -193,4 +214,13 @@ const closeMenu = () => {
   isOpen.value = false
   document.body.style.overflow = ''
 }
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll, { passive: true })
+})
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll)
+  document.body.style.overflow = ''
+})
 </script>

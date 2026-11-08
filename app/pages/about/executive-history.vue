@@ -18,7 +18,7 @@ useHead({
           <thead>
             <tr>
               <th class="number-col">ลำดับ</th>
-              <th>รายนามผู้บริหาร</th>
+              <th>ชื่อ-นามสกุล</th>
               <th class="year-col">ปี พ.ศ.</th>
             </tr>
           </thead>

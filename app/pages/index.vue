@@ -8,7 +8,7 @@ useHead({
   <!-- Hero -->
   <div class="hero">
     <img
-      src="/assets/องค์ภา.png"
+      src="/assets/thumb.jpg"
       alt="โรงเรียนพิษณุโลกพิทยาคม"
     >
   </div>

@@ -13,72 +13,72 @@ useHead({
         <h1>ผู้บริหารโรงเรียน</h1>
       </div>
 
-      <div class="management-grid">
+      <div class="profile-grid">
 
         <!-- ผู้อำนวยการ -->
-        <article class="management-card">
+        <article class="profile-card">
           <img
             src="/assets/people/กร-เลือกหา.png"
             alt="กร เลือกหา"
-            class="management-image"
+            class="profile-image"
           >
 
-          <div class="management-content">
+          <div class="profile-content">
             <h2>กร<br>เลือกหา</h2>
             <p>ผู้อำนวยการ</p>
           </div>
         </article>
 
         <!-- รองผู้อำนวยการ -->
-        <article class="management-card">
+        <article class="profile-card">
           <img
             src="/assets/people/รัตติกาล-บัวสิงคำ.png"
             alt="รัตติกาล บัวสิงคำ"
-            class="management-image"
+            class="profile-image"
           >
 
-          <div class="management-content">
+          <div class="profile-content">
             <h2>รัตติกาล<br>บัวสิงคำ</h2>
-            <p>รองผู้อำนวยการกลุ่มงบประมาณและบุคคล</p>
+            <p>รองผู้อำนวยการ<br>กลุ่มงบประมาณและบุคคล</p>
           </div>
         </article>
 
-        <article class="management-card">
+        <article class="profile-card">
           <img
             src="/assets/people/ธันย์ญาธิป-ฟองจางวาง.png"
             alt="ธันย์ญาธิป ฟองจางวาง"
-            class="management-image"
+            class="profile-image"
           >
 
-          <div class="management-content">
+          <div class="profile-content">
             <h2>ธันย์ญาธิป<br>ฟองจางวาง</h2>
-            <p>รองผู้อำนวยการกลุ่มวิชาการ</p>
+            <p>รองผู้อำนวยการ<br>กลุ่มวิชาการ</p>
           </div>
         </article>
 
-        <article class="management-card">
+        <article class="profile-card">
           <img
             src="/assets/people/ธารีรัตน์-สุวรรณ.png"
             alt="ธารีรัตน์ สุวรรณ"
-            class="management-image"
+            class="profile-image"
           >
 
-          <div class="management-content">
+          <div class="profile-content">
             <h2>ธารีรัตน์<br>สุวรรณ</h2>
-            <p>รองผู้อำนวยการกลุ่มทั่วไป</p>
+            <p>รองผู้อำนวยการ<br>กลุ่มทั่วไป</p>
           </div>
         </article>
 
-        <article class="management-card">
+        <article class="profile-card">
           <img
             src="/assets/people/ทิพยรัตน์-ส่งประเสริฐ.png"
             alt="ทิพยรัตน์ ส่งประเสริฐ"
-            class="management-image"
+            class="profile-image"
           >
 
-          <div class="management-content">
+          <div class="profile-content">
             <h2>ทิพยรัตน์<br>ส่งประเสริฐ</h2>
-            <p>รองผู้อำนวยการกลุ่มกิจการนักเรียน</p>
+            <p>รองผู้อำนวยการ<br>กลุ่มกิจการนักเรียน</p>
           </div>
         </article>
 
